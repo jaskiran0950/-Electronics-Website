@@ -1,0 +1,103 @@
+<html>
+<head>
+<title> SignUp Page </title>
+<style>
+   body{
+    background-image: url(image5.jpg);
+        background-color:grey; color:white;
+    }
+    ul#menu li {
+       display:inline; float: right; padding-left:50px;
+       }
+       button {
+    font-family: 'helvetica neue', helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid greenyellow;
+    background: greenyellow;
+    color: rgba(0,0,200,0.6);
+    box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+#menu  a{
+    color:#f1f1f1;
+    text-decoration: none;
+    font-weight: bolder;
+</style>
+</head>
+<body>
+    <HR>
+    <H1>THE TECH CUBE</H1>
+    <hr>
+
+    <nav>
+        <ul id="menu">
+            <li><input type="text" placeholder="Search" name="Search" ></li>
+            <li><a href="#contactsection">  CONTACT </a></li>
+            <li> <a href="LogIn.html">LOG IN </a></li> 
+            <li> <a href="SignUp.html">SIGN UP </a></li> 
+            <li> <a href="AboutUs.html"> ABOUT US </a></li> 
+            <li>SHOP</li> 
+            <li><a href="HomePage.html">HOME</a></li>  
+        </ul>
+    </nav>  
+    <br>
+    <br>
+    <hr>
+
+
+
+<form>
+<fieldset>
+<legend> <h1>Sign Up </h1> </legend>
+
+
+Mobile Number <input type="" name="number"> <br> <br>
+
+First Name <input type="text" name="fname">
+
+Last Name <input type="text" name="Lname"> <br> <br>
+
+Date of Birth <Input type="date" name="dob"> <br> <br>
+
+Gender &nbsp &nbsp <input type= "radio" name="gender"> Male <input type= "radio" name="gender"> Female  <br> <br>
+
+Email <input type="email" name="email"> <br> <br>
+
+Password <input type="password" name="password"> 
+
+Confirm Password <input type="password" name="Cpassword"> <br> <br>
+
+
+
+Sign Up for newsletter <input type= "checkbox"><BR>
+Receive updates on Whtasapp & SMS <input type= "checkbox"> <br> <br>
+<br>
+ <button> Proceed </button>
+</fieldset>
+</form>
+<Hr>
+    <h1 id= "contactsection"><U> CONTACT US </U><h1>
+    <h3>Phone No- 98654XXXXX <br>
+    Email Id- thetechcube@gmail.com
+    </h3>
+    <img src="image4.jpg" width="100%" height="450px">
+
+    <script> 
+    let  proceedBtn = document.querySelector('button');
+    proceedBtn.addEventListener('click', showMsg);
+
+    function showMsg(){
+        alert("You have been Signed Up!")
+    }
+
+    
+    </script>
+</body>
+</html>
+
+
